@@ -1,0 +1,46 @@
+{
+    "name": "Kickstarter",
+    "description": "",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/pull_image_10-12-2019-02-59-pm.png",
+    "tags": [
+        "api provider",
+        "api service provider",
+        "have api",
+        "profile"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/kickstarter\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "Kickstarter",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/pull_image_10-12-2019-02-59-pm.png",
+            "humanURL": "http:\/\/www.kickstarter.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/kickstarter-openapi.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Blog RSS",
+            "url": "http:\/\/www.kickstarter.com\/blog.atom"
+        },
+        {
+            "type": "Transparency Report",
+            "url": "https:\/\/www.kickstarter.com\/blog\/kickstarter-transparency-report-2014"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/www.kickstarter.com"
+        }
+    ]
+}
