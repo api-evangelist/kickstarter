@@ -1,8 +1,31 @@
 aid: kickstarter
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/kickstarter.png
 name: Kickstarter
-description: 'Kickstarter is a company surfaced as a portfolio company of thrive-capital, union-square-ventures
-  and added to the API Evangelist network as a stub for enrichment. Sector: consumer. This profile is
-  a lead awaiting the enrichment pipeline.'
+description: >-
+  Kickstarter is a public-benefit crowdfunding platform where creators launch
+  funding campaigns for creative projects — film, music, art, design, games,
+  technology, publishing, and more — and backers pledge money to help bring
+  them to life on an all-or-nothing funding model. Founded in 2009 and
+  headquartered in Brooklyn, New York, it has channeled billions of dollars in
+  pledges to hundreds of thousands of successfully funded projects. Kickstarter
+  does not currently operate a public developer API program or developer
+  portal; its GraphQL and REST endpoints power its own web and mobile clients
+  and are not documented for third-party integration. The company does maintain
+  an active open-source GitHub organization (including its iOS and Android app
+  source), a help center, and a company blog. This API Evangelist profile
+  tracks Kickstarter's public developer, security, and platform surface for
+  discovery and enrichment.
 url: https://raw.githubusercontent.com/api-evangelist/kickstarter/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +36,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Consumer
+- Crowdfunding
+- Fundraising
+- Creators
+- Payments
+- Marketplace
+- Public Benefit Corporation
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -26,3 +55,24 @@ maintainers:
 common:
 - type: Website
   url: https://www.kickstarter.com
+- type: Blog
+  url: https://www.kickstarter.com/blog
+- type: HelpCenter
+  url: https://help.kickstarter.com
+- type: TermsOfService
+  url: https://www.kickstarter.com/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.kickstarter.com/privacy
+- type: SignUp
+  url: https://www.kickstarter.com/signup
+- type: GitHubOrganization
+  url: https://github.com/kickstarter
+- type: DomainSecurity
+  url: security/kickstarter-domain-security.yml
+- type: WellKnown
+  url: well-known/kickstarter-well-known.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
