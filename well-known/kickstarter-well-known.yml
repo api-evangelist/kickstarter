@@ -1,0 +1,23 @@
+generated: '2026-07-19'
+method: searched
+source: live probes of https://www.kickstarter.com/.well-known/*
+host: https://www.kickstarter.com
+notes: >-
+  Kickstarter runs a bot-mitigation layer (many paths return 403 to automated
+  clients rather than real content). The openid-configuration path returns HTTP
+  200 with an empty JSON object ({}) — a placeholder, not a functional OpenID
+  Connect discovery document. Kickstarter publishes no public developer API, so
+  there is no meaningful OAuth/OIDC discovery surface here.
+documents:
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: kickstarter-openid-configuration.json
+    note: empty JSON object ({}), not a real OIDC discovery document
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
